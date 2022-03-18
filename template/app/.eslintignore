@@ -1,0 +1,6 @@
+dist/
+node_modules/
+types/**/*.d.ts
+**/*.md
+src/assets/js/modernizr-custom.js
+src/assets/js/modernizr.positionfixed.js

@@ -1,0 +1,125 @@
+{
+    "namespace": "MXChat",
+    "api": [
+        {
+            "apiName": "hideOptionMenu",
+            "apiCategory": "界面相关",
+            "apiKeyWords": "界面，分享，隐藏",
+            "apiTitle": "隐藏右上角分享按钮接口",
+            "params": []
+        },
+        {
+            "apiName": "showOptionMenu",
+            "apiCategory": "界面相关",
+            "apiKeyWords": "界面，分享，显示",
+            "apiTitle": "显示右上角分享按钮接口",
+            "params": []
+        },
+        {
+            "apiName": "setCustomHeaderMenu",
+            "apiCategory": "界面相关",
+            "apiKeyWords": "自定义，文字",
+            "apiTitle": "自定义右上角显示文字",
+            "params": [
+                {
+                    "key": "CustomMenu",
+                    "type": "string",
+
+                    "description": "右上角显示文字",
+                    "defaultValue":
+                        "[{ title: '刷新', key: 'refresh', icon: '' }]",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "apiName": "setWebViewTitle",
+            "apiCategory": "界面相关",
+            "apiKeyWords": "自定义，标题栏",
+            "apiTitle": "设置页面上部标题栏",
+            "params": [
+                {
+                    "key": "Title",
+
+                    "type": "string",
+                    "description": "标题栏显示文字",
+                    "defaultValue": "",
+                    "require": true
+                }
+            ]
+        },
+        {
+            "apiName": "showWebViewTitle",
+            "apiCategory": "界面相关",
+            "apiKeyWords": "显示，标题栏",
+            "apiTitle": "显示页面上部标题栏接口",
+            "params": [
+                {
+                    "key": "Title",
+                    "type": "string",
+
+                    "description": "标题栏显示文字",
+                    "defaultValue": ""
+                }
+            ]
+        },
+        {
+            "apiName": "hideToolbar",
+            "apiCategory": "界面相关",
+            "apiKeyWords": "界面，工具栏，隐藏",
+            "apiTitle": "隐藏页面下部工具栏接口",
+            "params": []
+        },
+        {
+            "apiName": "showToolbar",
+            "apiCategory": "界面相关",
+            "apiKeyWords": "界面，工具栏，显示",
+            "apiTitle": "显示页面下部工具栏接口",
+            "params": []
+        },
+        {
+            "apiName": "closeWindow",
+            "apiCategory": "界面相关",
+            "apiKeyWords": "界面，关闭",
+            "apiTitle": "关闭当前页面",
+            "params": []
+        },
+        {
+            "apiName": "disableBackKey",
+            "apiCategory": "界面相关",
+            "apiKeyWords": "界面，禁用，安卓，back",
+            "apiTitle": "禁用安卓back键",
+            "params": []
+        },
+        {
+            "apiName": "setNavBgColor",
+            "apiCategory": "界面相关",
+            "apiKeyWords": "导航栏，背景颜色，设置",
+            "apiTitle": "设置导航栏背景颜色接口",
+            "params": [
+                {
+                    "key": "bgcolor",
+                    "type": "string",
+
+                    "description": "导航栏背景颜色",
+                    "defaultValue": ""
+                }
+            ]
+        },
+        {
+            "apiName": "setPopupMenuBgColor",
+            "apiCategory": "界面相关",
+            "apiKeyWords": "菜单，右上角， 背景颜色，设置",
+            "apiTitle": "设置右上角菜单背景颜色接口",
+            "params": [
+                {
+                    "key": "bgcolor",
+                    "type": "string",
+
+                    "description": "右上角菜单背景颜色",
+                    "defaultValue": ""
+                }
+            ]
+        }
+    ]
+}

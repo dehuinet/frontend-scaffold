@@ -1,0 +1,275 @@
+{
+    "namespace": "MXFaceRecognition",
+    "api": [
+        {
+            "apiName": "showFaceInformation",
+            "apiCategory": "人脸",
+            "apiKeyWords": "人脸注册",
+            "apiTitle": "人脸注册",
+            "params": [
+                {
+                    "key": "params",
+                    "type": "interface<Params>"
+                }
+            ],
+            "interface": {
+                "Params": {
+                    "userName": {
+                        "type": "string",
+                        "description": "姓名",
+                        "defaultValue": "",
+                        "required": true
+                    },
+                    "documentType": {
+                        "type": "enum<DocumentType>",
+                        "description": "证件类型",
+                        "defaultValue": "1"
+                    },
+                    "documentNum": {
+                        "type": "string",
+                        "description": "证件号码",
+                        "defaultValue": ""
+                    },
+                    "success": {
+                        "type": "success",
+                        "description": "函数成功的回调",
+                        "responseType": "object"
+                    },
+                    "error": {
+                        "type": "fail",
+                        "description": "函数失败的回调",
+                        "responseType": "object"
+                    }
+                }
+            },
+            "enum": {
+                "DocumentType": [
+                    {
+                        "description": "无证件",
+                        "value": "0"
+                    },
+                    {
+                        "description": "居民身份证",
+                        "value": "1"
+                    },
+                    {
+                        "description": "户口簿",
+                        "value": "2"
+                    },
+                    {
+                        "description": "护照",
+                        "value": "3"
+                    },
+                    {
+                        "description": "军人证",
+                        "value": "4"
+                    },
+                    {
+                        "description": "港澳台通行证",
+                        "value": "5"
+                    },
+                    {
+                        "description": "武警身份证",
+                        "value": "6"
+                    },
+                    {
+                        "description": "边民出入境通行证",
+                        "value": "7"
+                    },
+                    {
+                        "description": "士兵证",
+                        "value": "14"
+                    },
+                    {
+                        "description": "其他",
+                        "value": "21"
+                    },
+                    {
+                        "description": "员工号",
+                        "value": "99"
+                    }
+                ]
+            }
+        }, 
+        {
+            "apiName": "faceRegistrationSearch",
+            "apiCategory": "人脸",
+            "apiKeyWords": "人脸注册信息查询",
+            "apiTitle": "人脸注册信息查询",
+            "params": [
+                {
+                    "key": "params",
+                    "type": "interface<Params>"
+                }
+            ],
+            "interface": {
+                "Params": {
+                    "userName": {
+                        "type": "string",
+                        "description": "姓名",
+                        "defaultValue": "",
+                        "required": true
+                    },
+                    "documentType": {
+                        "type": "enum<DocumentType>",
+                        "description": "证件类型",
+                        "defaultValue": "1"
+                    },
+                    "documentNum": {
+                        "type": "string",
+                        "description": "证件号码",
+                        "defaultValue": ""
+                    },
+                    "success": {
+                        "type": "success",
+                        "description": "函数成功的回调",
+                        "responseType": "object"
+                    },
+                    "error": {
+                        "type": "fail",
+                        "description": "函数失败的回调",
+                        "responseType": "object"
+                    }
+                }
+            },
+            "enum": {
+                "DocumentType": [
+                    {
+                        "description": "无证件",
+                        "value": "0"
+                    },
+                    {
+                        "description": "居民身份证",
+                        "value": "1"
+                    },
+                    {
+                        "description": "户口簿",
+                        "value": "2"
+                    },
+                    {
+                        "description": "护照",
+                        "value": "3"
+                    },
+                    {
+                        "description": "军人证",
+                        "value": "4"
+                    },
+                    {
+                        "description": "港澳台通行证",
+                        "value": "5"
+                    },
+                    {
+                        "description": "武警身份证",
+                        "value": "6"
+                    },
+                    {
+                        "description": "边民出入境通行证",
+                        "value": "7"
+                    },
+                    {
+                        "description": "士兵证",
+                        "value": "14"
+                    },
+                    {
+                        "description": "其他",
+                        "value": "21"
+                    },
+                    {
+                        "description": "员工号",
+                        "value": "99"
+                    }
+                ]
+            }
+        }, 
+        {
+            "apiName": "showFaceContrast",
+            "apiCategory": "人脸",
+            "apiKeyWords": "人脸对比",
+            "apiTitle": "人脸对比",
+            "params": [
+                {
+                    "key": "params",
+                    "type": "interface<Params>"
+                }
+            ],
+            "interface": {
+                "Params": {
+                    "userName": {
+                        "type": "string",
+                        "description": "姓名",
+                        "defaultValue": "",
+                        "required": true
+                    },
+                    "documentType": {
+                        "type": "enum<DocumentType>",
+                        "description": "证件类型",
+                        "defaultValue": "1"
+                    },
+                    "documentNum": {
+                        "type": "string",
+                        "description": "证件号码",
+                        "defaultValue": ""
+                    },
+                    "success": {
+                        "type": "success",
+                        "description": "函数成功的回调",
+                        "responseType": "object"
+                    },
+                    "error": {
+                        "type": "fail",
+                        "description": "函数失败的回调",
+                        "responseType": "object"
+                    }
+                }
+            },
+            "enum": {
+                "DocumentType": [
+                    {
+                        "description": "无证件",
+                        "value": "0"
+                    },
+                    {
+                        "description": "居民身份证",
+                        "value": "1"
+                    },
+                    {
+                        "description": "户口簿",
+                        "value": "2"
+                    },
+                    {
+                        "description": "护照",
+                        "value": "3"
+                    },
+                    {
+                        "description": "军人证",
+                        "value": "4"
+                    },
+                    {
+                        "description": "港澳台通行证",
+                        "value": "5"
+                    },
+                    {
+                        "description": "武警身份证",
+                        "value": "6"
+                    },
+                    {
+                        "description": "边民出入境通行证",
+                        "value": "7"
+                    },
+                    {
+                        "description": "士兵证",
+                        "value": "14"
+                    },
+                    {
+                        "description": "其他",
+                        "value": "21"
+                    },
+                    {
+                        "description": "员工号",
+                        "value": "99"
+                    }
+                ]
+            }
+        }
+    ]
+}

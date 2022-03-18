@@ -1,0 +1,157 @@
+{
+    "namespace": "MXChat",
+    "api": [
+        {
+            "apiName": "shareToChat",
+            "apiCategory": "分享",
+            "apiKeyWords": "分享，分享到敏行，自定义",
+            "apiTitle": "分享到敏信及自定义分享内容接口",
+            "params": [
+                {
+                    "key": "title",
+                    "type": "string",
+
+                    "defaultValue": "",
+                    "description": "分享的标题"
+                },
+                {
+                    "key": "image_url",
+                    "type": "string",
+
+                    "defaultValue": "",
+                    "description": "缩略图的url"
+                },
+                {
+                    "key": "url",
+                    "type": "string",
+
+                    "defaultValue": "",
+                    "description": "分享的url"
+                },
+                {
+                    "key": "app_url",
+                    "type": "string",
+                    "defaultValue": "",
+
+                    "description":
+                        "app_url,原生的页面。如果是分享的html页面，该字段设置为空"
+                },
+                {
+                    "key": "description",
+                    "type": "string",
+
+                    "defaultValue": "",
+                    "description": "分享的描述"
+                },
+                {
+                    "key": "source_id",
+                    "type": "string",
+
+                    "defaultValue": "",
+                    "description":
+                        "资源id,比如应用商店中的应用的id,或者公众号的id"
+                },
+                {
+                    "key": "source_type",
+                    "type": "Array<enum<Source>>",
+                    "defaultValue": [],
+                    "description": "ocu-公众号  app-应用商店里的应用"
+                },
+                {
+                    "key": "onSuccess",
+                    "type": "success",
+                    "description": "函数成功的回调",
+                    "responseType": "object"
+                }
+            ],
+            "enum": {
+                "Source": [
+                    {
+                        "description": "公众号",
+                        "value": "ocu"
+                    },
+                    {
+                        "description": "应用商店里的应用",
+                        "value": "app"
+                    }
+                ]
+            }
+        },
+        {
+            "apiName": "shareToCircle",
+            "apiCategory": "分享",
+            "apiKeyWords": "分享，分享到工作圈，自定义",
+            "apiTitle": "分享到工作圈及自定义分享内容接口",
+            "params": [
+                {
+                    "key": "title",
+                    "type": "string",
+
+                    "defaultValue": "",
+                    "description": "分享的标题"
+                },
+                {
+                    "key": "image_url",
+                    "type": "string",
+
+                    "defaultValue": "",
+                    "description": "缩略图的url"
+                },
+                {
+                    "key": "url",
+                    "type": "string",
+                    "defaultValue": "",
+
+                    "description": "分享的url"
+                },
+                {
+                    "key": "app_url",
+                    "type": "string",
+
+                    "defaultValue": "",
+                    "description":
+                        "app_url,原生的页面。如果是分享的html页面，该字段设置为空"
+                },
+                {
+                    "key": "description",
+                    "type": "string",
+
+                    "defaultValue": "",
+                    "description": "分享的描述"
+                },
+                {
+                    "key": "source_id",
+                    "defaultValue": "",
+
+                    "type": "string",
+                    "description":
+                        "资源id,比如应用商店中的应用的id,或者公众号的id"
+                },
+                {
+                    "key": "source_type",
+                    "type": "Array<enum<Source>>",
+                    "defaultValue": [],
+                    "description": "ocu-公众号  app-应用商店里的应用"
+                },
+                {
+                    "key": "onSuccess",
+                    "type": "success",
+                    "description": "函数成功的回调",
+                    "responseType": "object"
+                }
+            ],
+            "enum": {
+                "Source": [
+                    {
+                        "description": "公众号",
+                        "value": "ocu"
+                    },
+                    {
+                        "description": "应用商店里的应用",
+                        "value": "app"
+                    }
+                ]
+            }
+        }
+    ]
+}

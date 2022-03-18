@@ -1,0 +1,32 @@
+{
+    "namespace": "MXChat",
+    "api": [
+        {
+            "apiName": "getLocation",
+            "apiCategory": "地理位置相关",
+            "apiKeyWords": "GPS,定位，地理位置",
+            "apiTitle": "获取地理位置接口",
+            "params": [
+                {
+                    "key": "onSuccess",
+                    "type": "success",
+                    "description": "函数成功的回调",
+                    "responseType": "object"
+                },
+                {
+                    "key": "onError",
+                    "type": "fail",
+                    "description": "函数失败后的回调",
+                    "responseType": "object"
+                },
+                {
+                    "key": "isGpsOnly",
+
+                    "type": "booean",
+                    "description": "是否仅用GPS定位",
+                    "defaultValue": false
+                }
+            ]
+        }
+    ]
+}

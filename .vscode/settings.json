@@ -1,0 +1,15 @@
+{
+    "javascript.validate.enable": false,
+    "typescript.validate.enable": false,
+    "stylelint.enable": false,
+    "eslint.enable": true,
+    "files.exclude": {
+        "admin": true,
+        "app": true,
+        "component": true
+    },
+    "editor.wordWrap": "on",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}

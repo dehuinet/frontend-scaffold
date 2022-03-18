@@ -1,0 +1,175 @@
+{
+    "namespace": "MXChat",
+    "api": [
+        {
+            "apiName": "selectUser",
+            "apiCategory": "通用",
+            "apiKeyWords": "选人, 人",
+            "apiTitle": "获取通讯录人员及部门数据接口(单选)",
+            "apiDescription": "部门选人",
+            "params": [
+                {
+                    "key": "onSuccess",
+                    "type": "success",
+                    "description": "函数成功的回调",
+                    "responseType": "object"
+                },
+                {
+                    "key": "enableSelectDept",
+                    "type": "boolean",
+                    "description": "是否可以选中部门",
+
+                    "defaultValue": true
+                },
+                {
+                    "key": "cutomDeptReferencesIDS",
+                    "type": "Array<string>",
+                    "description": "自定义部门id",
+
+                    "defaultValue": null
+                },
+                {
+                    "key": "personalContactEnable",
+                    "type": "boolean",
+                    "description": "是否可以选中常用联系人",
+
+                    "defaultValue": true
+                },
+                {
+                    "key": "canSelectSelf",
+                    "type": "boolean",
+                    "description": "是否可以选中自己",
+
+                    "defaultValue": false
+                },
+                {
+                    "key": "selectedUsers",
+                    "type": "Array<number>",
+                    "description": "已经选择的人员id",
+
+                    "defaultValue": null
+                },
+                {
+                    "key": "adminPermission",
+                    "type": "boolean",
+                    "description": "是否开启权限认证",
+
+                    "defaultValue": true
+                }
+            ]
+        },
+        {
+            "apiName": "selectUser",
+            "apiCategory": "通用",
+            "apiKeyWords": "选人, 人",
+            "apiTitle": "获取通讯录人员及部门数据接口(单选,对象参数)",
+            "apiDescription": "部门选人",
+            "params": [
+                {
+                    "key": "onSuccess",
+                    "type": "success",
+                    "description": "函数成功的回调",
+                    "responseType": "object"
+                },
+                {
+                    "key": "enableSelectDept",
+                    "type": "boolean",
+                    "description": "是否可以选中部门",
+
+                    "defaultValue": true
+                },
+                {
+                    "key": "cutomDeptReferencesIDS",
+                    "type": "Array<string>",
+                    "description": "自定义部门id",
+
+                    "defaultValue": null
+                },
+                {
+                    "key": "personalContactEnable",
+                    "type": "boolean",
+                    "description": "是否可以选中常用联系人",
+
+                    "defaultValue": true
+                },
+                {
+                    "key": "canSelectSelf",
+                    "type": "boolean",
+                    "description": "是否可以选中自己",
+
+                    "defaultValue": false
+                },
+                {
+                    "key": "selectedUsers",
+                    "type": "Array<number>",
+                    "description": "已经选择的人员id",
+
+                    "defaultValue": null
+                },
+                {
+                    "key": "adminPermission",
+                    "type": "boolean",
+                    "description": "是否开启权限认证",
+
+                    "defaultValue": true
+                }
+            ]
+        },
+        {
+            "apiName": "selectUsers",
+            "apiCategory": "通用",
+            "apiKeyWords": "选人, 多选",
+            "apiTitle": "获取通讯录人员及部门数据接口(多选)",
+            "params": [
+                {
+                    "key": "onSuccess",
+                    "type": "success",
+                    "description": "函数成功的回调",
+                    "responseType": "object"
+                },
+                {
+                    "key": "enableSelectDept",
+                    "type": "boolean",
+                    "description": "是否可以选中部门",
+
+                    "defaultValue": true
+                },
+                {
+                    "key": "cutomDeptReferencesIDS",
+                    "type": "Array<string>",
+                    "description": "自定义部门id",
+
+                    "defaultValue": null
+                },
+                {
+                    "key": "personalContactEnable",
+                    "type": "boolean",
+                    "description": "是否可以选中常用联系人",
+
+                    "defaultValue": true
+                },
+                {
+                    "key": "canSelectSelf",
+                    "type": "boolean",
+                    "description": "是否可以选中自己",
+
+                    "defaultValue": false
+                },
+                {
+                    "key": "selectedUsers",
+                    "type": "Array<number>",
+                    "description": "已经选择的人员id",
+
+                    "defaultValue": null
+                },
+                {
+                    "key": "adminPermission",
+                    "type": "boolean",
+                    "description": "是否开启权限认证",
+
+                    "defaultValue": true
+                }
+            ]
+        }
+    ]
+}

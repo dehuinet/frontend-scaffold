@@ -1,0 +1,19 @@
+{
+    "namespace": "MXChat",
+    "api": [
+        {
+            "apiName": "chat",
+            "apiCategory": "通用",
+            "apiKeyWords": "聊天，发起聊天",
+            "apiTitle": "向用户发起聊天接口",
+            "params": [
+                {
+                    "key": "loginNames",
+                    "type": "Array<string>",
+                    "defaultValue": [],
+                    "description": "用户的登录名数组"
+                }
+            ]
+        }
+    ]
+}

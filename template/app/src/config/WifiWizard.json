@@ -1,0 +1,19 @@
+{
+    "namespace": "MXChat",
+    "api": [
+        {
+            "apiName": "getCurrentBSSID",
+            "apiCategory": "通用",
+            "apiKeyWords": "wifi，mac，客户端",
+            "apiTitle": "获取客户端连接wifi的mac地址",
+            "params": [
+                {
+                    "key": "onSuccess",
+                    "type": "success",
+                    "description": "函数成功的回调",
+                    "responseType": "object"
+                }
+            ]
+        }
+    ]
+}
